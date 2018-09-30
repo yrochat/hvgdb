@@ -1,0 +1,71 @@
+---
+title: "mobygames_allgame"
+author: "Yannick Rochat"
+date: "30/09/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This script displays the distribution of videogames released per year on [MobyGames](mobygames.com), an online collaborative database referencing more than a hundred thousand games (in 2018).
+
+We gather the number of games per year by extracting this information from the mobygames summary pages.
+
+```{r}
+
+url <- "http://www.mobygames.com/browse/games/"
+
+```
+
+Choose a time interval.
+
+```{r}
+
+years <- as.character(1971:2017)
+
+```
+
+We extract the numbers and produce a data frame.
+
+```{r}
+
+library(rvest)
+library(stringr)
+
+hey <- lapply(years, . %>% 
+              str_c(url, ., "/list-games/") 
+              %>% read_html() 
+              %>% html_nodes(xpath = "//*[@id='main']/div/div[2]/div/text()[3]")
+              %>% html_text())
+
+year_games <- unlist(hey)
+year_games <- str_extract(year_games, "[0-9]+")
+year_games <- as.numeric(year_games)
+
+games <- data.frame(year = as.numeric(years), count = year_games)
+
+```
+
+Let's plot it.
+
+```{r}
+
+library(ggplot2)
+
+g <- ggplot(games, aes(x = year, y = count)) + geom_bar(stat = "identity")
+g <- g + ggtitle(str_c("Number of games per year on MobyGames (1971-2017). N = ", sum(games$count), " games"))
+g <- g + xlab("Year")
+g <- g + ylab("Number of Games")
+g
+
+```
+
+And save it.
+
+```{r}
+
+ggsave("mobygames_allgames.png", width = 10)
+
+```
