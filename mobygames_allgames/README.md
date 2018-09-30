@@ -1,5 +1,7 @@
-Pour recréer ce graphique, ouvrir le fichier en `.Rmd` avec RStudio.
+In order to reproduce this chart, open the `.Rmd` file with RStudio.
 
-Le fichier `pdf` présente également le code et le graphique.
+The `pdf` file also presents the code and the chart.
+
+----
 
 ![test](mobygames_allgames.png)
