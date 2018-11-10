@@ -142,7 +142,7 @@ levels(data1$addon)[levels(data1$addon)=="games"] <- "Games"
 data1 <- data1[!duplicated(data1$ID),]
 ```
 
-This the drawing of fig 1a.
+This is the drawing of fig 1a.
 ---------------------------
 
 ``` r
@@ -401,7 +401,7 @@ levels(per_plat$epoque) <- c("Prehistory", "Ancient history", "Middle Ages
 ", "Early modern\nperiod", "Late\nmodern", "All eras", "Myths")
 ```
 
-Here we graph figure 2a
+Here we graph figure 2a.
 -----------------------
 
 ``` r
@@ -437,6 +437,9 @@ levels(per_type$epoque) <- c("Prehistory", "Ancient history", "Middle Ages", "Ea
 per_type$genre <- droplevels(per_type$genre)
 levels(per_type$genre) <- c("Action", "Action-Adventure", "Adventure", "Role-Playing Game", "Simulation", "Strategy")
 ```
+
+This is the drawing of fig 2b.
+---------------------------
 
 ``` r
 p4 <- ggplot(per_type, aes(x = epoque, y = freq, fill = genre)) +
