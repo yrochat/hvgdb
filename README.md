@@ -1,6 +1,6 @@
 # Historical video game database
 
-The [notebook](https://github.com/yrochat/hvgdb/blob/master/historia_ludens_chapter/historia_ludens.md) shows the analysis made for a chapter in the book *Historia Ludens* to be published soon.
+The [notebook](https://github.com/yrochat/hvgdb/blob/master/historia_ludens_chapter/README.md) shows the analysis made for a chapter in the book *Historia Ludens* to be published soon.
 
 You can find the whole notebook and code and data [here](https://github.com/yrochat/hvgdb/tree/master/historia_ludens_chapter).
 
