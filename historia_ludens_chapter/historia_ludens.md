@@ -1,4 +1,4 @@
-R Notebook
+Descriptive analysis of a database of historical videogames
 ================
 
 We load some packages useful for our analysis.
