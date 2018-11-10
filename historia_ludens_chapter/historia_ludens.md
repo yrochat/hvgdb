@@ -1,4 +1,4 @@
-Descriptive analysis of a database of historical videogames
+Descriptive analysis of a historical videogames database
 ================
 
 We load some packages useful for our analysis.
