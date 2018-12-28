@@ -1,8 +1,8 @@
-Interview with HistoriaGames editor in chief
+# Interview with HistoriaGames editor in chief
 
 Here is a reconstruction of the email interviews of Mr. Aymeric Defrance.
 
-[8 October 2015]
+## 8 October 2015
 
 YR. How were the historical periods established?
 
@@ -16,7 +16,7 @@ However, for these categories to be established, they must include at least thre
 
 There is a separate category called All periods combined (I'm not sure how else to name it). It concerns games that go through historical periods from beginning to end, as is the case with Civilization, without dealing with a particular period. Nevertheless, there may be a scenario based on a conflict as is the case for Rise of Nations: Thrones & Patriots and its campaign on the conquests of Alexander the Great. In this case, the game is also in the relevant subcategory.
 
-[9 October 2015]
+## 9 October 2015
 
 YR. How is the base maintained?
 
@@ -26,7 +26,7 @@ YR. How was the database started?
 
 AD. We started the database in March 2011. I spent nearly 6 months referencing the first 1400 historical videogames based mostly on the database of the Mobygames website, also collecting information directly from publishers and developers. The 300 or so other games added later were mostly new announcements and releases in the last 4 years. The database has very few early access games and it is rare to find a cancelled game. I generally prefer the games to be planned for release. 
 
-[13 October 2015]
+## 13 October 2015
 
 In addition to MobyGames, websites like VideoGameGeek, Jeuxvideo.com and Wikipedia have also helped me. Publishers' sites are also useful, such as Matrix Games’.
 
@@ -38,7 +38,7 @@ YR. How were the genres defined?
 
 AD. […] I used the common classification as found on Wikipedia : https://fr.wikipedia.org/wiki/Type_video_game
 
-[26 January 2016]
+## 26 January 2016 
 
 YR. In the case of a videogame released on several platforms, how did you determine the release date?
 
